@@ -7,14 +7,30 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: #A9A9A9;
 }
 
 body {
     font-family: "Montserrat", sans-serif;
 }
 
+
+
 /* Section Styling -------------------- */
+
+.main-header {
+    height: 950px;
+    background:linear-gradient(to bottom, rgba(255,0,0,0), rgb(255, 255, 255, 0.8)),
+    url("../images/corto-lima-background.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    text-align: center;
+    padding-top: 250px;
+    font-size: 1.625em;
+    color: #228B22;
+}
+
 
 .navbar {
     font-size: 18px;
@@ -22,6 +38,11 @@ body {
 
 .main-nav {
     list-style-type: none;
+
+}
+
+.main-nav a:hover {
+    color: #228B22; 
 }
 
 .main-nav {
