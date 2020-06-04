@@ -13,8 +13,6 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-
-
 /* Section Styling -------------------- */
 
 .main-header {
@@ -26,7 +24,7 @@ body {
 
 .title {
     text-align: center;
-    padding-top: 250px;
+    padding-top: 150px;
     font-size: 1.625em;
     color: #edf0f1;
 }
@@ -38,16 +36,12 @@ body {
 
 .main-nav {
     list-style-type: none;
+    display: none;
 
 }
 
 .main-nav a:hover {
     color: #228B22; 
-}
-
-.main-nav {
-    list-style-type: none;
-    display: none;
 }
 
 .nav-links,
@@ -80,6 +74,23 @@ body {
     display: block;
 }
 
+.tile {
+    margin: 30px;
+    padding: 40px 40px 20px;
+    max-width: 1000px;
+    max-height: 1000px;
+    text-align: center;
+    background: rgb(252, 180, 180);
+    border-bottom: 4px solid #ccc;
+    border-radius: 6px;
+}
+
+.tile:hover {
+    border-color: #228B22;
+}
+
+/* Link Styling -------------------- */
+
 button {
     padding: 10px 15px;
     background-color: rgba(34,139,34, 1);
@@ -100,11 +111,6 @@ button {
     text-decoration: none;
  } /* Add the Montserrat font to the li, a, button features */
 
-
-/* Link Styling -------------------- */
-
-
-
 /* Media Queries -------------------- */
 
 @media screen and (min-width: 768px) {
@@ -115,6 +121,13 @@ button {
         padding-bottom: 0px;
         height: 70px;
         align-items: center;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        max-width: 400px;
     }
 
     .main-nav {
@@ -139,5 +152,12 @@ button {
     .logo:hover,
     .nav-links:hover {
         color: rgba(255, 255, 255, 1);
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        color: #228B22;
     }
 }
