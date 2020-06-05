@@ -133,6 +133,12 @@ button {
     text-decoration: none;
  } /* Add the Montserrat font to the li, a, button features */
 
+ h2 {
+     text-transform: uppercase;
+     color: #228B22;
+     font-size: 1.625em;
+ }
+
 .clearfix {
     clear: both;
 }
