@@ -7,10 +7,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 body {
     font-family: "Montserrat", sans-serif;
+
 }
 
 /* Section Styling -------------------- */
@@ -74,19 +76,39 @@ body {
     display: block;
 }
 
-.tile {
+.tile-1,
+.tile-2,
+.tile-3 {
     margin: 30px;
     padding: 40px 40px 20px;
-    max-width: 600px;
-    max-height: 400px;
+    max-width: 500px;
     text-align: center;
-    background: rgb(252, 180, 180);
-    border-bottom: 4px solid #ccc;
-    border-radius: 6px;
+    border: 4px solid #ccc ;
+    border-radius: 50px 50px;
 }
 
-.tile:hover {
+.tile-1:hover,
+.tile-2:hover,
+.tile-3:hover {
     border-color: #228B22;
+}
+
+.tile-1 {
+    background-image: url(../images/cortolima-food.jpg);
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.tile-2 {
+    background-image: url(../images/cortolima-drinks.jpg);
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.tile-3 {
+    background-image: url(../images/cortolima-contactus.jpg);
+    background-size: cover;
+    opacity: 0.6;
 }
 
 /* Link Styling -------------------- */
@@ -111,9 +133,14 @@ button {
     text-decoration: none;
  } /* Add the Montserrat font to the li, a, button features */
 
+.clearfix {
+    clear: both;
+}
+
 /* Media Queries -------------------- */
 
-@media screen and (min-width: 768px) {
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -127,8 +154,19 @@ button {
         display: flex;
         justify-content: space-around;
         margin: 0 auto;
-        max-width: 400px;
-        max-height: 400px;
+        max-width: 1500px;
+    }
+
+    .tile-1,
+    .tile-2,
+    .tile-3 {
+        width: 1500px;
+        height: 400px;
+        text-align: center;
+    }
+
+    h2 {
+        padding-top: 40%;
     }
 
     .main-nav {
@@ -157,6 +195,7 @@ button {
     
 }
 
+/* Styles for smaller screens */
 @media screen and (max-width: 768px) {
     h1 {
         color: #228B22;
