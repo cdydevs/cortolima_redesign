@@ -19,7 +19,7 @@ body {
 
 .main-header {
     height: 775px;
-    background:linear-gradient(to bottom, rgba(255,0,0,0), rgb(255, 255, 255, 0.7)),
+    background:linear-gradient(to bottom, rgba(255,0,0,0), rgb(255, 255, 255, 0.9)),
     url("../images/cortolima-bg1.jpg") no-repeat center;
     background-size: cover;
 }
