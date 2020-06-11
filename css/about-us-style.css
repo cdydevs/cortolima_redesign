@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* Base Styling ------------------------------------ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    /*setting alpha = 0.6*/ 
+    background: rgba(0, 151, 19, 0.6);
+
+}
+
+/* Section Styling ------------------------------------ */
+
+.navbar {
+    font-size: 18px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+
+}
+
+.main-nav a:hover {
+    color: #228B22; 
+}
+
+.nav-links,
+.logo {
+    text-decoration: none; 
+    color: #edf0f1;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+}
+
+
+/* Main-Body Styling ------------------------- */
+
+.centered {
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+img.owners-img {
+    max-width: 100%;
+    max-height: 100%;
+    padding-bottom: 30px;
+}
+
+.tile-1 {
+    padding: 40px 40px 40px;
+    max-width: 500px;
+    background-color: #edf0f1;
+    border-bottom: 4px solid #000000 ;
+    border-radius: 50px 50px;
+}
+
+.tile-1:hover {
+    border-color: #228B22;
+    cursor: pointer;
+}
+
+
+/* Link Styling ------------------------------------ */
+
+button {
+    padding: 10px 15px;
+    background-color: #edf0f1;;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(237, 240, 241, 0.8);
+}
+
+button {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(34,139,34, 1);
+    text-decoration: none;
+ } /* Add the Montserrat font to the li, a, button features */
+
+
+.clearfix {
+    clear: both;
+}
+
+/* Media Queries ------------------------------------ */
+
+/* Styles for larger screens */
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        height: 70px;
+        align-items: center;
+    }
+
+    
+
+    .main-nav {
+        display: flex;
+        margin-right: 20px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+    
+
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+    
+}
