@@ -18,15 +18,15 @@ body {
 /* Section Styling -------------------- */
 
 .main-header {
-    height: 700px;
-    background:linear-gradient(to bottom, rgba(255,0,0,0), rgb(255, 255, 255, 0.8)),
-    url("../images/corto-lima-background.jpg") no-repeat center;
+    height: 775px;
+    background:linear-gradient(to bottom, rgba(255,0,0,0), rgb(255, 255, 255, 0.7)),
+    url("../images/cortolima-bg1.jpg") no-repeat center;
     background-size: cover;
 }
 
 .title {
     text-align: center;
-    padding-top: 150px;
+    padding-top: 110px;
     font-size: 1.625em;
     color: #edf0f1;
     text-shadow: 4px 4px 6px #000000;
@@ -77,6 +77,8 @@ body {
     display: block;
 }
 
+/* Next 5 sections are all styling the 3 tiles for Food, Drinks, Contact Us */
+
 .tile-1,
 .tile-2,
 .tile-3 {
@@ -84,7 +86,7 @@ body {
     padding: 40px 40px 20px;
     max-width: 500px;
     text-align: center;
-    border: 4px solid #ccc ;
+    border-bottom: 4px solid #000000 ;
     border-radius: 50px 50px;
 }
 
@@ -92,24 +94,25 @@ body {
 .tile-2:hover,
 .tile-3:hover {
     border-color: #228B22;
+    cursor: pointer;
 }
 
 .tile-1 {
     background-image: url(../images/cortolima-food.jpg);
     background-size: cover;
-    opacity: 0.6;
+    box-shadow: 4px 4px 6px #000000;
 }
 
 .tile-2 {
     background-image: url(../images/cortolima-drinks.jpg);
     background-size: cover;
-    opacity: 0.6;
+    box-shadow: 4px 4px 6px #000000;
 }
 
 .tile-3 {
     background-image: url(../images/cortolima-contactus.jpg);
     background-size: cover;
-    opacity: 0.6;
+    box-shadow: 4px 4px 6px #000000;
 }
 
 /* Link Styling -------------------- */
@@ -148,12 +151,12 @@ button {
 /* Media Queries -------------------- */
 
 /* Styles for larger screens */
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
     .navbar {
         display: flex;
         justify-content: space-between;
         padding-top: 30px;
-        padding-bottom: 0px;
+        padding-bottom: 20px;
         height: 70px;
         align-items: center;
     }
@@ -162,24 +165,24 @@ button {
         display: flex;
         justify-content: space-around;
         margin: 0 auto;
-        max-width: 1500px;
+        max-width: 1700px;
     }
 
     .tile-1,
     .tile-2,
     .tile-3 {
-        width: 1500px;
+        width: 1700px;
         height: 400px;
         text-align: center;
     }
 
     h2 {
-        padding-top: 40%;
+        padding-top: 30%;
     }
 
     .main-nav {
         display: flex;
-        margin-right: 30px;
+        margin-right: 20px;
         flex-direction: row;
         justify-content: flex-end;
     }
