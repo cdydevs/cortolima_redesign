@@ -81,6 +81,10 @@ img.owners-img {
     padding-bottom: 30px;
 }
 
+div.tile-1 {
+    line-height:1.5;
+}
+
 .tile-1 {
     padding: 40px 40px 40px;
     max-width: 500px;
@@ -135,7 +139,6 @@ button {
         align-items: center;
     }
 
-    
 
     .main-nav {
         display: flex;
@@ -162,4 +165,17 @@ button {
         color: rgba(255, 255, 255, 1);
     }
     
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .tile-1 {
+        background-color: #edf0f1;
+            width: 325px;
+            height: 700px;
+            overflow: auto;
+            text-align: center;
+            padding: 20px;
+        }
 }
