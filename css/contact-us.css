@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+
+/* Nav bar Styling */
+
+.navbar {
+    font-size: 18px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+
+}
+
+.main-nav a:hover {
+    color: #228B22; 
+}
+
+.nav-links,
+.logo {
+    text-decoration: none; 
+    color: #228b22;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #edf0f1;;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(34, 138, 41, 0.8);
+}
+
+button {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(34,139,34, 1);
+    text-decoration: none;
+ } /* Add the Montserrat font to the li, a, button features */
+
+
+.clearfix {
+    clear: both;
+}
+
+
+/* Main styling for contact form */
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+
+.container:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/cortolima-contactus1.jpg) no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(50px);
+}
+
+.contact-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, .19);
+}
+
+
+.left{
+    height: 100%;
+    background: url(../images/cortolima-contactus1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.right{
+    padding: 25px 40px;
+}
+
+h2{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+h2:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+.field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+
+.field:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.field:focus{
+    background-color: #fff;
+    border: 2px solid rgba(30, 85, 250, 0.47);
+}
+
+.area{
+    min-height: 150px ;
+}
+
+.btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #2ecc71;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: .3s;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+
+    .left{
+        height: 200px;
+    }
+
+    
+    
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        height: 70px;
+        align-items: center;
+    }
+
+
+    .main-nav {
+        display: flex;
+        margin-right: 20px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+    
+
+    .logo:hover,
+    .nav-links:hover {
+        color: rgb(0, 0, 0);
+    }
+    
+}

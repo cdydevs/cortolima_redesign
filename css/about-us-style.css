@@ -111,13 +111,14 @@ button {
 }
 
 button:hover {
-    background-color: rgba(237, 240, 241, 0.8);
+    background-color: rgba(34, 138, 41, 0.8);
+    color: #edf0f1;
 }
 
 button {
     font-weight: 500;
     font-size: 18px;
-    color: rgba(34,139,34, 1);
+    color:#edf0f1
     text-decoration: none;
  } /* Add the Montserrat font to the li, a, button features */
 
