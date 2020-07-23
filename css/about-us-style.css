@@ -118,9 +118,10 @@ button:hover {
 button {
     font-weight: 500;
     font-size: 18px;
-    color:#edf0f1
+    color:#edf0f1;
     text-decoration: none;
- } /* Add the Montserrat font to the li, a, button features */
+ } 
+ /* Add the Montserrat font to the li, a, button features */
 
 
 .clearfix {
