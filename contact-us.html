@@ -34,19 +34,24 @@
     </nav>
 <script src="js/main.js"></script>
 </header>
-  
+
+<div id="error"></div>
+<form action="/" method="GET" id="form">
   <div class="container">
     <div class="contact-box">
       <div class="left"></div>
         <div class="right">
           <h2>Contact Us</h2>
-          <input type="text" class="field" placeholder="Your First Name">
-          <input type="text" class="field" placeholder="Your Last Name">
-          <input type="text" class="field" placeholder="Your Email">
-          <input type="text" class="field" placeholder="Your Phone Number">
-          <textarea class="field area" placeholder="Drop A Message"></textarea>
-          <button class="btn">Send</button>
+          
+          <input type="text" id="name" class="field" placeholder="Your First Name" oninput="checkInput()">
+          <input type="text" id="name" class="field" placeholder="Your Last Name">
+          <input type="text" id="email" class="field" placeholder="Your Email">
+          <input type="text" id="phone" class="field" placeholder="Your Phone Number">
+          <textarea class="field area"  placeholder="Drop A Message" ></textarea>
+          <button type="submit" class="btn">Send</button>
+        </form>
         </div>
     </div>
+    <script src="contactus.js"></script>
 </body>
 </html>
